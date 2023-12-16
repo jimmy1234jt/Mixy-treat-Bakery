@@ -1,0 +1,99 @@
+.footer {
+    background-color: black;
+    color: white;
+    border-top: 2px solid white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-img{
+    flex: 1;
+}
+
+.footer-text{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-text h4 {
+    color: #BA1818;
+    font-size: 18px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-icons img {
+    width: 30px;
+}
+
+.follow{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.newsletter h5 {
+    font-size: 16px;
+}
+
+.input-news {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.input-news input {
+    height: 100%;
+    width: 100%;
+}
+.input-news button {
+    position: absolute;
+    border: none;
+    right: 0;
+    bottom: 1px;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-right: 20px;
+    flex: 1;
+}
+
+@media (max-width:800px) {
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px) {
+    .footer-img img {
+        width: 200px;
+    }
+}
+
+@media (max-width:320px) {
+    .footer-text{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
