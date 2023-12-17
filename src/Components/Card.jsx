@@ -1,5 +1,6 @@
 // Card.jsx
 
+
 const Card = ({ id, title, description,Image }) => {
   return (
     <div className="card-wrapper">
