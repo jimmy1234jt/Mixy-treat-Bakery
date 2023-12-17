@@ -18,7 +18,7 @@ function Home() {
           <div className="intro-text">
             <div className='intro-header'>
               <h1>Welcome</h1>
-              <h1>To</h1>
+              <h1><span>To</span></h1>
               <h1>Mixy Treats</h1>
             </div>
             <div className='time-wrapper'>

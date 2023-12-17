@@ -30,11 +30,12 @@ function Footer() {
             </div>
             <div className='links'>
             <h4>Quick Links</h4>
-            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/">Service</Link></Scroll>
-            <Link to="/menu" >Menu</Link>
-            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/">Contact Us</Link></Scroll>
+            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/"><h5>Service</h5></Link></Scroll>
+            <Link to="/menu" ><h5>Menu</h5></Link>
+            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/"><h5>Contact Us</h5></Link></Scroll>
             </div>
         </div>
+        <p className='copyright'>&copy; Ejero .p. Odafewomoni 2023. All rights reserved.</p>
     </div>
   )
 }

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: bellota, serif;
 }
 .home{
     background-color: black;
@@ -9,7 +10,7 @@
 
 .intro {
     display: flex;
-    height: 100vh;
+    height: 95vh;
 }
 
 .intro-img{
@@ -36,6 +37,11 @@
     align-items: center;
     gap: 30px;
     font-size: 40px;
+    font-weight: 700;
+}
+
+.intro-header span {
+    color: white;
 }
 
 .time-wrapper {
@@ -48,7 +54,7 @@
 
 .time-wrapper h4 {
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .time-content {
@@ -65,6 +71,7 @@
     align-items: center;
     padding: 10px 30px;
     font-size: 24px;
+    font-weight: 300;
 }
 
 .intro-btn{
@@ -276,7 +283,10 @@
     color: white;
     background-color: black;
     border: none;
+    border-radius: 10px;
 }
+
+
 
 @media (max-width:1250px) {
     .card-container, .contact{
@@ -348,6 +358,27 @@
     .card, .card-img {
         width: 100%;
     }
+    .service-header {
+        font-size: 20px;
+    }
+    .service-header .redline{
+        left: 0;
+    }
 }
 
+@media (max-width:320px) {
+    .intro-header{
+        font-size: 20px;
+    }
+    .social-wrapper{
+        width: 100%;
+    }
+    .service-wrapper{
+        align-items: center;
+    }
+    .service-header{
+        padding: 20px 0 10px 0 ;
+        
+    }
+}
 

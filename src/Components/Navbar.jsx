@@ -23,16 +23,16 @@ function Navbar() {
             </Link>
         </div>
         <div className="right-side">
-            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/">Service</Link></Scroll>
-            <Link to="/menu" >Menu</Link>
-            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/">Contact Us</Link></Scroll>
+            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/"><h3>Service</h3></Link></Scroll>
+            <Link to="/menu" ><h3>Menu</h3></Link>
+            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} ><Link to="/"><h3>Contact Us</h3></Link></Scroll>
         </div>
         <div className="menu">
           <button onClick={toggleNavbar} ><img src={menu} alt=""/></button>
           <div className={`dropdown ${isOpen ? 'open' : ''}`}>
-            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} onClick={closeNavbar} ><Link to="/">Service</Link></Scroll>
-            <Link to="/menu" onClick={closeNavbar} >Menu</Link>
-            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeNavbar} ><Link to="/">Contact Us</Link></Scroll>
+            <Scroll to="service" spy={true} smooth={true} offset={-70} duration={500} onClick={closeNavbar} ><Link to="/"><h3>Service</h3></Link></Scroll>
+            <Link to="/menu" onClick={closeNavbar} ><h3>Menu</h3></Link>
+            <Scroll to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={closeNavbar} ><Link to="/"><h3>Contact Us</h3></Link></Scroll>
           </div>
         </div>
     </div>

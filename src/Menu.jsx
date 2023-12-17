@@ -30,7 +30,7 @@ function Menu() {
             <div key={item.id} className="menu-card">
               {item.Image && <img src={item.Image} alt={item.title} style={{ maxWidth: '100%' }} />}
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              {/* <p>{item.description}</p> */}
             </div>
           ))}
         </div>
